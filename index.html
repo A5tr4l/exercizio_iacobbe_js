@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+    let punteggio = 0
+    alert("Benvenuto al quiz. Ti verranno proposte 5 domande. Per ogni risposta corretta ti verrà assegnato 1 punto. Per ogni sbagliata 0. Alla fine del programma sarà riportato il puteggio ottenuto")
+    let domanda1=prompt("Quale è la capitale dell'italia?")
+    while(domanda1===null){
+        domanda1=prompt("Quale è la capitale dell'italia?")
+    }
+    if (domanda1.toLowerCase()==="roma"){
+        punteggio = punteggio+1
+    }
+    let domanda2=prompt("Quante dita ha una mano?")
+    while(domanda2===null){
+        domanda2=prompt("Quante dita ha una mano?")
+    }
+    if (domanda2.toLowerCase()==="cinque" || domanda2.toLowerCase()==="5"){
+        punteggio = punteggio+1
+    }
+    let domanda3=prompt("Quanti capelli ha in testa un pelato?")
+    while(domanda3===null){
+        domanda3=prompt("Quanti capelli ha in testa un pelato?")
+    }
+    if (domanda3.toLowerCase()==="zero" || domanda3.toLowerCase()=== "0"){
+        punteggio = punteggio+1
+    }
+    let domanda4=prompt("Quale è il nome della palestra commerciale più famosa in Italia?")
+    while(domanda4===null){
+        domanda4=prompt("Quale è il nome della palestra commerciale più famosa in Italia?")
+    }
+    if (domanda4.toLowerCase()==="mcfit" || domanda4.toLowerCase()==="mc fit"){
+        punteggio = punteggio+1
+    }
+    let domanda5=prompt("Di che colore è il cavallo bianco di Napoleone?")
+    while(domanda5===null){
+        domanda5=prompt("Di che colore è il cavallo bianco di Napoleone?")
+    }
+    if (domanda5.toLowerCase()==="bianco"){
+        punteggio = punteggio+1
+    }
+    
+    if (punteggio===1){
+        alert("Hai totalizzato "+punteggio+" punto")
+    }
+    else{
+        alert("Hai totalizzato "+punteggio+" punti")
+    }
+
+    </script>
+</body>
+</html>
